@@ -1,0 +1,80 @@
+:root {
+    --color1: #dcdba8ff;
+    --color2: #40476dff;
+    --color3: #483519ff;
+    --color4: #98a6d4ff;
+    --color5: #e8d7f1ff;
+}
+
+/* général */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--color4);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+hr {
+
+    margin: 0
+}
+
+header {
+    background-color: var(--color1);
+    display: flex;
+    height: 60px
+}
+
+header nav {
+
+    width: 100%;
+    font-weight: bold;
+
+}
+
+header ul {
+
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+
+    column-gap: 20px;
+
+}
+
+header img {
+
+    width: 10%;
+    height: 100%;
+
+}
+
+
+table {
+    border: var(--color3) 1px solid;
+    margin-top: 5%;
+    margin-left: 30%;
+}
+
+/* roles.html */
+
+#table-role th,
+td {
+    border: var(--color3) 1px solid;
+
+
+}
+
+#table-role th {
+    font-weight: bold;
+}
+
+#table-role tr td:first-child {
+    font-weight: bold;
+}

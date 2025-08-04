@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulaire Roles</title>
+</head>
+
+<body>
+    <header>
+        <img src="./img/logo/CRM_logo-horizontal-noir.png" alt="Logo">
+        
+        <nav>
+
+            <ul>
+                <li><a href="index.html">Index </a></li>
+                <li><a href="utilisateurs.html">Utilisateurs </a></li>
+                <li> <a href="roles.html"> Rôles </a></li>
+                <li> <a href="utilisateurs-ajouter.html"> Ajouter utilisateur </a></li>
+                <li> <a href="roles-ajouter.html"> Ajouter rôle </a></li>
+                <li> <a href="profil.html"> Profil </a> </li>
+            </ul>
+
+        </nav>
+    </header>
+    <hr>
+    <form>
+        <fieldset>
+            <legend>Formulaire d'ajout de roles (tous les champs sont obligatoire)</legend>
+            <label for="nomRole"> Nom du role: </label>
+            <input type="text" id="role-name" required>
+            <label for="description"> Description du role: </label>
+            <textarea id="description" required> </textarea>
+
+            <input type="submit" id="btn-subrole">
+        </fieldset>
+    </form>
+</body>
+
+</html>
