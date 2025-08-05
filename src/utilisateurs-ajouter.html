@@ -25,26 +25,43 @@
 
         </nav>
     </header>
-    <hr>
     <h1> Formulaire d'ajout d'utilisateurs </h1>
     <form>
 
         <fieldset>
-            <legend> Information personnelles:</legend>
-            <label for="nom">Nom:</label>
+            <p>* : champs obligatoire</p>
+            <legend> Informations personnelles:</legend>
+            <label for="nom">Nom:*</label>
             <input type="text" id="user-name" required>
-            <label for="prenom">Prénom: </label>
+            <label for="prenom">Prénom:* </label>
             <input type="text" id="user-firstname" required>
-            <label for="email">Addresse mail: </label>
+            <label for="email">Addresse mail:* </label>
             <input type="email" id="user-email" required>
-            <label for="role">Role: </label>
+            <label for="role">Role:* </label>
             <input type="text" id="user-role" required>
+            <label for="date-naissance">Date de naissance</label>
+            <input type="date" id="user-date">
         </fieldset>
-        <legend>Information complémentaires:</legend>
-        <label for="description-profil"> Description: </label>
+        <fieldset>
+        <legend>Informations complémentaires:</legend>
+        <label for="description-profile"> Description: </label>
         <textarea id="user-description"></textarea>
-
+        
+</fieldset>
+    <input type="submit">
     </form>
+        <footer>
+        <img src="./img/logo/CRM_logo-horizontal-noir.png" alt="Logo">
+        <nav>
+        <ul>
+                <li><a href=""> RPGD </a></li>
+                <li><a href=""> Contact</a></li>
+                <li> <a href=""> Copyright </a></li>
+                <li> <a href=""> Cookies </a></li>
+                <li> <a href=""> Sécurité </a></li>
+        </ul>
+        </nav>
+    </footer>
 </body>
 
 </html>
