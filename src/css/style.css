@@ -24,7 +24,7 @@ body {
 h1 {
     margin: 5px;
 }
-
+/* header */
 
 header {
     background-color: var(--color1);
@@ -57,7 +57,7 @@ header img {
 
 }
 
-
+/* footer */
 footer {
     border-top: 3px var(--color3) solid;
     background-color: var(--color1);
@@ -94,7 +94,9 @@ footer img {
     width: 10%;
     height: 100%;
 
+
 }
+/* tableau */
 
 table {
     border: var(--color3) 1px solid;
@@ -111,6 +113,7 @@ td {
 
 }
 
+/* formulaire*/
 
 form {
 
@@ -118,7 +121,7 @@ form {
     color: var(--color1);
 
     padding: 10px;
-    border: var(--color1) 2px solid;
+    border: var(--color3) 2px solid;
     border-radius: 15px;
     width: 500px;
     margin-left: 35%;
@@ -141,6 +144,7 @@ input ,textarea {
 fieldset{
     margin: 5px;
 }
+
 /* roles.html */
 
 
@@ -174,7 +178,7 @@ fieldset{
     background-color: var(--color2);
     width: 120px;
     height: 110px;
-    border: 3px var(--color1) solid;
+    border: 1px var(--color1) solid;
     border-radius: 150px;
     align-self: flex-start;
 
@@ -197,6 +201,8 @@ fieldset{
     border: 3px var(--color1) solid;
     border-radius: 30px;
     max-width: 100%;
+    margin-top: 45px;
+    margin-left: 0;
 
 
 }
