@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+
     <title>Formulaire Roles</title>
 </head>
 
 <body>
     <header>
         <img src="./img/logo/CRM_logo-horizontal-noir.png" alt="Logo">
-        
+
         <nav>
 
             <ul>
@@ -26,27 +28,32 @@
         </nav>
     </header>
     <h1>Formulaire d'ajout de rôles</h1>
-    <form>
-        <fieldset>
-            <legend>Ajouter un rôle (tous les champs sont obligatoires)</legend>
-            <label for="nomRole"> Nom du role: </label>
-            <input type="text" id="role-name" required>
-            <label for="description"> Description du role: </label>
-            <textarea id="description" required> </textarea>
+    <main>
+        <form id="add-role">
+            <fieldset>
+                <legend>Ajouter un rôle (tous les champs sont obligatoires)</legend>
+                <label for="nomRole"> Nom du rôle: </label>
+                <input type="text" id="role-name" required>
+                <label for="description"> Description du rôle: </label>
+                <textarea id="role-description" required> </textarea>
 
-            <input type="submit" id="btn-subrole">
-        </fieldset>
-    </form>
-        <footer>
+                <button type="submit" id="btn-subrole">Valider</button>
+            </fieldset>
+        </form>
+        <div id="result">
+            
+        </div>
+    </main>
+    <footer>
         <img src="./img/logo/CRM_logo-horizontal-noir.png" alt="Logo">
         <nav>
-        <ul>
+            <ul>
                 <li><a href=""> RPGD </a></li>
                 <li><a href=""> Contact</a></li>
-                <li> <a href=""> Copyright </a></li>
                 <li> <a href=""> Cookies </a></li>
                 <li> <a href=""> Sécurité </a></li>
-        </ul>
+                <li> <a href=""> Copyright </a></li>
+            </ul>
         </nav>
     </footer>
 </body>

@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+
 
     <title>Utilisateurs</title>
 </head>
@@ -12,7 +14,7 @@
 <body>
     <header>
         <img src="./img/logo/CRM_logo-horizontal-noir.png" alt="Logo">
-        
+
         <nav>
 
             <ul>
@@ -27,45 +29,47 @@
         </nav>
     </header>
     <h1>Tableau des utilisateurs</h1>
+    <main>
+        <table id="table-user">
+            <thead>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Email</th>
+                <th>Rôle</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Doe</td>
+                    <td>John</td>
+                    <td>john.doe@example.com</td>
+                    <td>Administrateur</td>
+                </tr>
+                <tr>
+                    <td>Kilgore</td>
+                    <td>Tacitus</td>
+                    <td>tacitus.killgore@example.com</td>
+                    <td>Encadrant</td>
+                </tr>
+                <tr>
+                    <td>Oldyyr</td>
+                    <td>Plaisse</td>
+                    <td>plaisse.oldyyr@example.com</td>
+                    <td>Usager</td>
+                </tr>
+            </tbody>
+        </table>
 
-    <table id="table-user">
-        <thead>
-            <th>Nom</th>
-            <th>Prénom</th>
-            <th>Email</th>
-            <th>Role</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Doe</td>
-                <td>John</td>
-                <td>john.doe@example.com</td>
-                <td>Administrateur</td>
-            </tr>
-            <tr>
-                <td>Kilgore</td>
-                <td>Tacitus</td>
-                <td>tacitus.killgore@example.com</td>
-                <td>Encadrant</td>
-            </tr>
-            <tr>
-                <td>Oldyyr</td>
-                <td>Plaisse</td>
-                <td>plaisse.oldyyr@example.com</td>
-                <td>Usager</td>
-            </tr>
-        </tbody>
-    </table>
+    </main>
     <footer>
         <img src="./img/logo/CRM_logo-horizontal-noir.png" alt="Logo">
         <nav>
-        <ul>
+            <ul>
                 <li><a href=""> RPGD </a></li>
                 <li><a href=""> Contact</a></li>
-                <li> <a href=""> Copyright </a></li>
                 <li> <a href=""> Cookies </a></li>
                 <li> <a href=""> Sécurité </a></li>
-        </ul>
+                <li> <a href=""> Copyright </a></li>
+            </ul>
         </nav>
     </footer>
 </body>

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
     <title>Roles</title>
 </head>
 
@@ -27,62 +28,64 @@
     </header>
 
     <h1>Tableau des rôles</h1>
-    <table id="table-role">
-        <thead>
-            <th> Nom </th>
-            <th> Description</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td> Invité </td>
-                <td> Usager non identifié:
-                    <ul>
-                        <li>Créer un compte s’il dispose du code d’inscription </li>
-                        <li> Demander à réinitialiser son mot de passe </li>
-                </td>
-                </ul>
-            </tr>
-            <tr>
-                <td> Usager </td>
-                <td>Utilisateur identifié:
-                    <ul>
-                        <li> Modifier les informations de son propre profil sauf son rôle </li>
-                        <li> Parcourir la liste des utilisateurs enregistrés </li>
-
-                </td>
-                </ul>
-            </tr>
-            <tr>
-                <td> Encadrant </td>
-                <td> Usager avec privilèges accrus:
-                    <ul>
-                        <li> Consulter les profils individuels des usagers et encadrants</li>
-                        <li>Modifier les informations des usagers (sauf leur rôle et leur mot de passe)</li>
+    <main>
+        <table id="table-role">
+            <thead>
+                <th> Nom </th>
+                <th> Description</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> Invité </td>
+                    <td> Usager non identifié:
+                        <ul>
+                            <li>Créer un compte s’il dispose du code d’inscription </li>
+                            <li> Demander à réinitialiser son mot de passe </li>
+                    </td>
                     </ul>
-                </td>
-            </tr>
-            <tr>
-                <td> Administrateur</td>
-                <td>Encadrant avec privilèges accrus :
-                    <ul>
-                        <li> Consulter le profil individuel de n’importe quel utilisateur</li>
+                </tr>
+                <tr>
+                    <td> Usager </td>
+                    <td>Utilisateur identifié:
+                        <ul>
+                            <li> Modifier les informations de son propre profil sauf son rôle </li>
+                            <li> Parcourir la liste des utilisateurs enregistrés </li>
 
-                        <li>Modifier toutes les informations d’un utilisateur enregistré</li>
-                        <li>Ajouter et supprimer un utilisateur</li>
+                    </td>
                     </ul>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+                </tr>
+                <tr>
+                    <td> Encadrant </td>
+                    <td> Usager avec privilèges accrus:
+                        <ul>
+                            <li> Consulter les profils individuels des usagers et encadrants</li>
+                            <li>Modifier les informations des usagers (sauf leur rôle et leur mot de passe)</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td> Administrateur</td>
+                    <td>Encadrant avec privilèges accrus :
+                        <ul>
+                            <li> Consulter le profil individuel de n’importe quel utilisateur</li>
+
+                            <li>Modifier toutes les informations d’un utilisateur enregistré</li>
+                            <li>Ajouter et supprimer un utilisateur</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
     <footer>
         <img src="./img/logo/CRM_logo-horizontal-noir.png" alt="Logo">
         <nav>
             <ul>
                 <li><a href=""> RPGD </a></li>
                 <li><a href=""> Contact</a></li>
-                <li> <a href=""> Copyright </a></li>
                 <li> <a href=""> Cookies </a></li>
                 <li> <a href=""> Sécurité </a></li>
+                <li> <a href=""> Copyright </a></li>
             </ul>
         </nav>
     </footer>
