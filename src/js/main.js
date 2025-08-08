@@ -19,9 +19,11 @@ const AddRoleButton = document.getElementById("btn-subrole")
 //  Tableau utilisateur.html
 const UserTable = document.getElementById("table-user")
 
-ListUser = []
-ListRole = []
+//tableau role.html
+const RoleTable = document.getElementById("table-role")
 
+ListUser = []
+ListRole = [] 
 
 
 function AddUser(event) {
@@ -43,6 +45,14 @@ function AddUser(event) {
         result.textContent = "Utilisateur ajouté"
     }
 
+    UserName.value = ""
+    UserFirstname.value = ""
+    UserEmail.value = ""
+    UserRole.value = ""
+    UserDate.value = ""
+    UserDescription.value = ""
+
+    
 
 
 }
@@ -61,8 +71,10 @@ if (CheckInputRole()) {
         result.textContent = "Rôle ajouté"
 
 
+}
+    roleName.value = ""
+    roleDescription.value = ""
 
-    }
 }
 
 
@@ -94,10 +106,11 @@ function CheckInputUser() {
         return false
 
     }
-    else if (!ListRole.includes(UserRole.value)) {
+   /* else if (!ListRole.includes(UserRole.value)) {
         result.textContent = "Le rôle sélectionné n'est pas valide."
         return false
-    }
+    }*/
+   
     else {
         return true
     }
@@ -131,11 +144,11 @@ function CheckInputRole() {
         return true
     }
 }
-//AddUserButton.addEventListener("click", AddUser)
-AddRoleButton.addEventListener("click", AddRole)
+AddUserButton.addEventListener("click", AddUser)
+//AddRoleButton.addEventListener("click", AddRole)
 
 
 
 
-console.log(ListRole)
+console.log(ListUser)
 
