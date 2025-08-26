@@ -198,12 +198,24 @@ fieldset {
     margin-bottom: 20px;
 }
 
+#btn-subrole{
+    height:50px;
+    width:80px;
+    font-size: large;
+}
+
 /* utilisateurs.html */
 
 
 /*utilisateurs-ajouter.html*/
 #add-user{
-    margin-top: 3%;
+    margin-top: 2%;
+}
+#btn-subuser{
+    margin-left: 25%;
+    height:50px;
+    width:80px;
+    font-size: large;
 }
 
 /* profil.html */
