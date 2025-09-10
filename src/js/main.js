@@ -52,8 +52,6 @@ function AddUser(event) {
     UserDate.value = ""
     UserDescription.value = ""
 
-    
-
 
 }
 
@@ -77,20 +75,32 @@ if (CheckInputRole()) {
 
 }
 
+/*
+
+   X Le nom, prénom contiennent au moins 2 caractères. X
+   X Le nom et prénom contiennent uniquement des lettres. X
+    Le nom et prénom peut contenir 1 espace ou 1 tiret s'il s'agit d'un nom composé.
+   X L'adresse email doit être au bon format. X
+   X Le libellé d'un rôle doit contenir entre 3 et 24 lettres (aucun autre caractère autorisé). X
+
+*/
 
 function CheckInputUser() {
 
     const name = UserName.value.trim()
     const firstName = UserFirstname.value.trim()
+    const email =UserEmail.value.trim()
+    const regex = /^[a-zA-ZÀ-ÿ]+$/
+    const regexEmail= /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
-
-
-    const regex = /^[a-zA-ZÀ-ÿ]+$/;
     if (!regex.test(name) || !regex.test(firstName)) {
         result.textContent = "Les noms ne peuvent contenir que des lettres."
         return false
     }
 
+    else if (!regexEmail.test(email)){
+        result.textContent = "Adresse email invalide"
+    }
 
     else if (name.length < 3 || firstName.length < 3) {
         result.textContent = "Les noms doivent comporter au moins 3 caractères."
@@ -125,8 +135,8 @@ function CheckInputRole() {
         result.textContent = "Le nom du rôle ne peut contenir que des lettres."
         return false
     }
-    else if (name.length < 3) {
-        result.textContent = "Le nom du rôle doit comporter au moins 3 caractères."
+    else if (name.length < 3 && name.length > 24) {
+        result.textContent = "Le nom du rôle doit comporter entre 3 et 24 caractères."
         return false
     }
 
