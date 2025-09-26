@@ -19,7 +19,7 @@ Modifier l'utilisateur n°4.
 SELECT * FROM t_user;
 
 /*Sélectionner le nom, prénom, email et identifiant de chaque utilisateur.*/
-SELECT user_firstname, user_lastname, user_email, user_id FROM t_user;
+SELECT user_lastname, user_firstname, user_email, user_id FROM t_user;
 
 /*Sélectionner l'identifiant, le prénom et le nom de l'utilisateur n°2.*/
 SELECT user_id, user_firstname, user_lastname FROM t_user WHERE user_id=2;
@@ -28,10 +28,10 @@ SELECT user_id, user_firstname, user_lastname FROM t_user WHERE user_id=2;
 SELECT user_id, user_lastname, user_email FROM t_user WHERE user_lastname='Doe';
 
 /*Sélectionner toutes les informations des utilisateurs sans prénom.*/
-SELECT user_id, user_firstname, user_lastname, user_email, user_password FROM t_user WHERE user_firstname IS NULL;
+SELECT user_id, user_firstname, user_lastname, user_email, user_password FROM t_user WHERE user_firstname IS NULL OR user_first_name ='';
 
 /*Sélectionner toutes les informations des utilisateurs avec un prénom. Le résultat est trié par identifiant (ordre décroissant)*/
-SELECT user_id, user_firstname, user_lastname, user_email, user_password FROM t_user WHERE user_firstname IS NOT NULL ORDER BY user_id ASC;
+SELECT user_id, user_firstname, user_lastname, user_email, user_password FROM t_user WHERE user_firstname IS NOT NULL ORDER AND user_firstname<>'' BY user_id DESC;
 
 /*Sélectionner l'identifiant et le nom des utilisateurs dont le nom contient la lettre "g".*/
 SELECT user_id, user_lastname FROM t_user WHERE user_lastname LIKE '%g%';
