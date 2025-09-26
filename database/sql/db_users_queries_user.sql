@@ -37,9 +37,9 @@ SELECT user_id, user_firstname, user_lastname, user_email, user_password FROM t_
 SELECT user_id, user_lastname FROM t_user WHERE user_lastname LIKE '%g%';
 
 /*Sélectionner l'identifiant, le nom et l'email des utilisateurs dont le prénom commence par la lettre "c". Le résultat est trié par prénom (ordre alphabétique)*/
-SELECT user_id, user_lastname, user_email FROM t_user WHERE user_firstname LIKE 'c%' ORDER BY user_firstname DESC;
+SELECT user_id, user_lastname, user_email FROM t_user WHERE user_firstname LIKE 'c%' ORDER BY user_firstname ASC;
 
 /*Sélectionner le nom, le prénom et l'email des utilisateurs dont l'email se termine par ".fr". Le résultat est trié par nom (ordre alphabétique)*/
-SELECT user_lastname, user_email FROM t_user WHERE user_email LIKE '%.fr' ORDER BY user_lastname DESC;
+SELECT user_lastname, user_email FROM t_user WHERE user_email LIKE '%.fr' ORDER BY user_lastname ASC;
 
 
