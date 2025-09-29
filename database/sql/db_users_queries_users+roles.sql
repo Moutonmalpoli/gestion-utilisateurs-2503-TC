@@ -44,7 +44,24 @@ FROM t_role
 INNER JOIN t_user ON t_user.role_id = t_role.role_id
 GROUP BY t_role.role_id;
 
-/* 7 Selectionner la moyenne du nombre d'utilisateurs par rôle. */
+/* 7: Selectionner la moyenne du nombre d'utilisateurs par rôle. */
 
 SELECT (SELECT COUNT(user_id)FROM t_user) / (SELECT COUNT(role_id)FROM t_role);
 
+/* 8: Sélectionner nom, prénom, nom du rôle de tous les utilisateurs avec pour chaque utilisateur l'identifiant et nom de l'utilisateur possédant le même rôle et l'identifiant le plus petit.*/
+
+
+/* Vu que l'on va comparer les utilisateurs entre eux,
+ on utilise des alias pour différencier deux instances de la table t_user
+ à savoir u1 pour le premier et u2 pour le second. */
+SELECT u1.user_id, u1.user_lastname, u1.user_firstname, t_role.role_name,
+	   u2.user_id AS user_2_id,
+		u2.user_lastname AS user_2_lastname
+		
+
+/* On fait une auto-jointure de la table t_user pour comparer u1 et u2 entre eux. */
+
+FROM t_user AS u1
+INNER JOIN t_role ON u1.role_id = t_role.role_id
+INNER JOIN t_user AS u2 ON u1.role_id = u2.role_id
+WHERE u2.user_id = (SELECT MIN(user_id) FROM t_user WHERE role_id = u1.role_id AND u2.user_id <> u1.user_id);
